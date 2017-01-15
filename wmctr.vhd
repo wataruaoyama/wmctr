@@ -48,7 +48,7 @@ EN24M <= CLK_SEL;
 BBB_MCK <= sysclk when CPOK = '1' else 'Z';
 DAC_SCK <= sysclk when CPOK = '1' else 'Z';
 
-LRCKDSDL <= LRCK when XDSD = '1' else DATA1;
+LRCKDSDL <= LRCK when XDSD = '1' else DATA0;
 DIN <= DATA0;
 BCKDSD64 <= BCK;
 DSD <= not XDSD; 
